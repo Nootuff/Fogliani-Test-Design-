@@ -1,0 +1,3 @@
+{
+  "components/search/product-list-sidebar": "<div class=\"product-list-sidebar\">\r\n  <h4>{{lang \"product_list_sidebar.refine_by\"}}</h4>\r\n  <p>Option group</p>\r\n  <hr />\r\n\r\n  <p>Price</p>\r\n  <hr />\r\n  <div>\r\n    <form class=\"product-list-sidebar-form\">\r\n      <input type=\"text\" class=\"price-form-item\" />\r\n      <input type=\"text\" class=\"price-form-item\" />\r\n      <button class=\"price-form-item button--primary\">test</button>\r\n    </form>\r\n  </div>\r\n</div>\r\n"
+}

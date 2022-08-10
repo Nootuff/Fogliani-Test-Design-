@@ -1,0 +1,3 @@
+{
+  "components/common/info-bar": "<div class=\"info-bar\">\r\n    <div class=\"info-bar-container\">\r\n    <div class=\"info-contents\">\r\n      <p>T\\OSUHD One</p>\r\n    </div>\r\n    <div class=\"info-contents\">\r\n      <p>Testher Two</p>\r\n    </div>\r\n  </div>\r\n  </div>"
+}
