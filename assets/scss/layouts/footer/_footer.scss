@@ -14,11 +14,35 @@
 // -----------------------------------------------------------------------------
 
 .footer {
-    background-color: $footer-background;
+    background-color: #333333; //$footer-background;
     border-top: container("border");
     padding: spacing("double") 0;
     position: relative;
     transform: translateZ(0); // 3
+
+    // Adam Custom code.
+    hr{
+        border-top: 1px solid white;
+    }
+
+    .container{
+      //  border: 1px solid snow;
+        margin: auto;
+        width: 90%;
+    }
+
+    h3{
+        font-weight: 700;
+    }
+
+    ul{
+        li{
+            color: white;
+            line-height: 24px;
+            font-weight: 400;
+        }
+    }
+
 }
 
 .footer-title-sr-only {
@@ -96,12 +120,20 @@
     }
 }
 
+.footer-info-col--end{
+   // border: 1px solid yellow;
+   float: right;
+}
+
+
+//Adam Custom stylings
+
 
 // Content
 // -----------------------------------------------------------------------------
 
 .footer-info-heading {
-    color: $footer-heading-fontColor;
+    color: white; //$footer-heading-fontColor;
     font-size: fontSize("base");
     text-transform: inherit;
 }
@@ -111,7 +143,7 @@
     margin-left: 0;
 
     a {
-        color: stencilColor("color-textSecondary");
+        color: white; //stencilColor("color-textSecondary");
         text-decoration: none;
 
         &:hover {
