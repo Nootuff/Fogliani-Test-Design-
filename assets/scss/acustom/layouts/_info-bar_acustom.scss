@@ -1,5 +1,45 @@
 .info-bar{
-    background-color: $SECONDARY;
+  background-color: #333333;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  display: none;
+  
+ul{
+ // border: 1px solid yellow;
+  width: 96%;
+  margin: auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  
+}
+  li{
+    display: inline;
+  //  line-height: 20px;
+    font-size: 16px;
+
+    a{
+      color: white;
+      line-height: 44px;
+      text-decoration: none;
+      text-align: center;
+      font-family: 'DM Sans', sans-serif;
+    }
+  }
+
+
+
+}
+
+@media (min-width: 992px) {
+  .info-bar{
+  display: block;
+  }
+}
+
+/*.info-bar{
+   // background-color: $SECONDARY;
     margin-top:  9px;
     @include breakpoint("medium") {
       margin-top:  0px;
@@ -26,3 +66,5 @@
     }
   
   }
+
+  */
