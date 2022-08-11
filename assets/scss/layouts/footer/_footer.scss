@@ -23,12 +23,20 @@
     // Adam Custom code.
     hr{
         border-top: 1px solid white;
+        width: 100%;
+        margin: 30px auto;
+        @include breakpoint("medium") {
+            width: 90%;
+        }
+
+        
     }
 
     .container{
       //  border: 1px solid snow;
         margin: auto;
         width: 90%;
+
     }
 
     h3{
@@ -95,9 +103,6 @@
     }
 }
 
-.footer-info-col--social {
-    width: 100%;
-}
 
 .footer-info-col--left {
     @include breakpoint("small") {
@@ -152,8 +157,39 @@
     }
 }
 
+.footer-lower {
+    display: block;
+   // flex-direction: row;
+    padding: 0;
+   // border: 1px solid salmon;
+
+    @include breakpoint("medium") {
+       // display: flex;
+    }
+}
+
 .footer-copyright {
-    text-align: center;
+  border: 1px solid red;  
+ // width: fit-content; 
+    //display: inline; 
+ // padding: 0;
+  color: white;
+  margin: auto;
+  //width: 100%;
+  text-align: center;
+  width: 80%;
+
+  @include breakpoint("medium") {
+  
+    //margin-left: auto;
+    text-align: right;
+    float: right; 
+    display: inline;
+   // justify-content: flex-end;
+  }
+
+ // margin: 0 0 0 auto;
+ /*   text-align: center;
 
     @include breakpoint("small") {
         text-align: left;
@@ -179,6 +215,40 @@
             color: stencilColor("color-textSecondary--hover");
         }
     }
+    */
+}
+
+.footer-info-col--social {
+    //justify-content: flex-start;
+    color: white;
+    //width: fit-content;
+  // border: 1px solid yellow;
+   display: block;
+   text-align: center;
+    //width: 100%;
+margin: auto;
+
+img{
+    width: 30px;
+    border: 1px solid blue;
+}
+
+    img:nth-child(2) {
+       margin-left: 10px;
+       margin-right: 10px;
+      }
+
+      @include breakpoint("medium") {
+        display: inline;
+        text-align: left;
+
+        img{
+            width: auto;
+            border: 1px solid yellowgreen;
+        }
+
+      }
+
 }
 
 .footer-payment-icons {
@@ -204,3 +274,5 @@
 .footer-newsletter-summary {
     text-align: left;
 }
+
+#consent-manager-update-banner { display:none!important;}

@@ -1,3 +1,4 @@
+
 {{#if banners.bottom}}
     {{#if settings.data_tag_enabled}}
         <div class="banners" data-banner-location="bottom">
@@ -25,7 +26,7 @@
   
         <section class="footer-info">
             <article class="footer-info-col footer-info-col--small" data-section-type="footer-webPages">
-                <h3 class="footer-info-heading">{{lang 'footer.navigate'}}</h3>
+                <h3 class="footer-info-heading"><!--{{lang 'footer.navigate'}}-->Fogliani</h3>
                 <ul class="footer-info-list">
                     {{#each pages}}
                         <li>
@@ -39,7 +40,7 @@
             </article>
 
             <article class="footer-info-col footer-info-col--small" data-section-type="footer-categories">
-                <h3 class="footer-info-heading">{{lang 'footer.categories'}}</h3>
+                <h3 class="footer-info-heading"><!--{{lang 'footer.categories'}}--> Specializzazioni</h3>
                 <ul class="footer-info-list">
                     {{#each categories}}
                         <li>
@@ -51,7 +52,7 @@
 
             {{#and theme_settings.shop_by_brand_show_footer shop_by_brand.length}}
             <article class="footer-info-col footer-info-col--small" data-section-type="footer-brands">
-                <h3 class="footer-info-heading">{{lang 'footer.brands'}}</h3>
+                <h3 class="footer-info-heading">Informazioni legali<!--{{lang 'footer.brands'}}--></h3>
                 <ul class="footer-info-list">
                     {{#each shop_by_brand}}
                         <li>
@@ -84,11 +85,11 @@
                             info@fogliani.it
                         </li>
                 </ul>
-                <div style="border: 1px solid red;">Tester</div>
+                <div style="border: 1px solid white;">Payment methods here</div>
             </article>
            
           
-        
+        <!--
 
             {{#if settings.address}}
             <article class="footer-info-col footer-info-col--small" data-section-type="storeInfo">
@@ -99,6 +100,7 @@
                 {{/if}}
             </article>
             {{/if}}
+            -->
 
             <article class="footer-info-col" data-section-type="newsletterSubscription">
              <!--   {{#if settings.show_newsletter_box}}
@@ -122,7 +124,7 @@
                 <p class="powered-by">&copy; {{moment format="YYYY"}} {{settings.store_name}} </p>
             </div>
         {{/if}}
-        <hr >
+        
        <!-- {{#if theme_settings.social_icon_placement_bottom '!==' 'bottom_none'}} 
         <article class="footer-info-col
             footer-info-col--social
@@ -136,16 +138,27 @@
         </article>
    {{/if}} -->
 
-   <div style="border: 1px solid red;  width: fit-content;  display: inline;" >
-<a style="color: white; " >test</a>
-{{> components/common/social-links}}
-</div>
-
-<div style="border: 1px solid red;  width: fit-content; float: right; display: inline; padding: 0;" >
-    <p style="color: white; margin: 0;">© 2011-2021 Fogliani - All Right Reserved - P.IVA 01317910121 - Codice REA VA172423 - Capitale Sociale I.V. 4.500.000€</p>
-    </div>
+ 
 
     </div>
+
+ 
+        
+        <hr >
+        <div class="container">
+            <div  class="footer-lower">
+           <!-- <p class="footer-info-col--social">Social media icons {{> components/common/social-links}}
+         
+            </p> -->
+            <div class="footer-info-col--social">
+                <img src="/assets/img/social_media/fb.png" alt="alt text" />
+                <img src="/assets/img/social_media/Instagram.png" alt="alt text" />
+                <img src="/assets/img/social_media/linkedin.png" alt="alt text" />
+            </div>
+        
+            <p class="footer-copyright">© 2011-2021 Fogliani - All Right Reserved - P.IVA 01317910121 - Codice REA VA172423 - Capitale Sociale I.V. 4.500.000€</p>
+            </div>
+        </div>
     
-    <!--{{{region name="ssl_site_seal--global"}}} -->
+ {{{region name="ssl_site_seal--global"}}} 
 </footer>
